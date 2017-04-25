@@ -1,0 +1,172 @@
+@TED_RED: #FF2B06;
+@TED_RED_DARK: #DF2707;
+@TEDX_RED: @TED_RED;
+@TEDX_RED_DARK: @TED_RED_DARK;
+@HEADER_SIZE: 40px;
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-color:#EEEEEE;
+}
+.jumbotron {
+	margin-bottom:0px;
+}
+.navbar-nav>li>a {
+	padding: 1px 5px;
+	margin:0 5px;
+	font-size: 15px;
+	color: white !important;
+	font-family: montserrat;
+}
+
+.divider {
+	color: @TED_RED;
+	line-height:22px;
+	font-size:12px;
+}
+
+
+#photo_carousel {
+	margin-top: 85px;
+	margin-bottom: 0px;
+	background-image: url(courtyard.jpg);
+	height: 650px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#speakers_header {
+	text-align:center;
+	margin-bottom:20px;
+	h2 {
+		margin:0;
+		font-family: Droid Serif;
+		font-size: @HEADER_SIZE;
+	}
+}
+
+.bio {
+	.portrait {
+		max-width:100%;
+		z-index: 0;
+		position: relative;	
+		-webkit-transition:0.3s ease;
+		transition:0.3s ease;
+		-webkit-backface-visibility:hidden;
+	
+	}
+	.name {
+		text-transform:uppercase;
+		font-family:Montserrat;
+		padding:10px;
+		margin:0;
+		text-align:center;
+		background: @TED_RED;
+		margin-top: -37px;
+		color: white;
+		z-index:1;	
+		position: relative;		
+		-webkit-transition:0.3s ease;
+		transition:0.3s ease;
+		-webkit-backface-visibility:hidden;
+
+	}
+}
+
+#whatistedx {
+	font-family:Droid Serif;
+	h2 {
+		font-family:Droid Serif;
+		color:white;
+		font-size:@HEADER_SIZE;
+	}
+	p {
+		color:#ecf0f1;
+		font-size:15px;
+	}
+	img {
+		max-width:100%;
+	}
+}
+
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}
+
+
+.speaker_bio_modal {
+	.modal-content {
+		border-radius:0px;
+		background: #333333;
+	}
+	.modal-body {
+		.speaker_photo {
+			margin-right:20px;
+			float:left;
+			height: 274px;
+		}
+		h2 {
+			font-weight:bold;
+			color:#EEEEEE;
+			font-family: Montserrat;
+			font-size:40px;
+			vertical-align: top;
+			margin-top:0px;
+			margin-bottom: 5px;
+		}
+		h3 {
+			display:inline-block;
+			font-weight:bold;
+			font-size:20px;
+			font-family: Montserrat;
+			color:@TED_RED;
+			margin-top:0px;
+		}
+		p {
+			font-size:14px;
+			font-family: Montserrat;
+			color:white;
+		}
+	}
+	.modal-dialog {
+		width: 700px;
+	}
+
+}
+
+.modal-dialog-center {
+    margin-top: 10%;
+}
+
+
+.button_cursor {
+	cursor:pointer;
+	-webkit-transition:0.3s ease;
+	transition:0.3s ease;
+}
+
+.tedxred {
+	color:@TED_RED !important;
+}
+.button_cursor:hover {
+	-webkit-transform:scale(1.1);
+	>.name {
+		background: @TED_RED_DARK;
+	}
+	>.portrait {
+		opacity:0.95;
+	}
+}
+
+
+.col-lg-offset-1x5 {
+margin-left: 12.5%;
+}
